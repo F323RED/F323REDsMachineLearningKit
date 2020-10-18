@@ -1,9 +1,9 @@
 '''
 Author : F323RED
 Date : 2020/10/17
-Version : 0.1.0
+Version : 1.0.0
 Describes : A set of functions for machine learning projects.
-            Hopelly everything should be work.
+            Hopefully everything should be work.
 '''
 
 import numpy as np
@@ -53,10 +53,19 @@ def NumericalDiff(f, x) :
     return (f(x+h) - f(x-h)) / 2*h      # A simple differentiation
 
 def NumeriaclGradient(f, x) :
+    h = 10e-4
     grad = np.zeros_like(x)
 
     for i in range(x.size) :
-        grad[i] = NumericalDiff(f, x[i])
+        temp = x[i]
+        x[i] = temp + h
+        a = f(x[1])
+
+        x[i] = temp - h
+        b = f(x[1])
+
+        x[i] = temp
+        grad[i] = (a - b) / (2 * h)
 
     return grad;                        # Get the gradient at x
 
