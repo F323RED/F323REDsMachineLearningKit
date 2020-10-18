@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "F323REDsMachineLearningKit", "F323REDsMachineLearningKit\F323REDsMachineLearningKit.pyproj", "{FFC1AFD1-391D-4257-9B27-8A41FFB9A882}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFC1AFD1-391D-4257-9B27-8A41FFB9A882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC1AFD1-391D-4257-9B27-8A41FFB9A882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFCD0248-E33A-4CA1-95DF-E03B5BDE544B}
+	EndGlobalSection
+EndGlobal
