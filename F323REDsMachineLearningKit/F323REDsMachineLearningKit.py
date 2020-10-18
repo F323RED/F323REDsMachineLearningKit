@@ -48,24 +48,26 @@ def CrossEntropyError(y, t) :
 
 # Some sort of differentiation stuff
 def NumericalDiff(f, x) :
-    h = 10e-4
+    h = 1e-4
 
     return (f(x+h) - f(x-h)) / 2*h      # A simple differentiation
 
 def NumeriaclGradient(f, x) :
-    h = 10e-4
+    h = 1e-4
     grad = np.zeros_like(x)
 
-    for i in range(x.size) :
-        temp = x[i]
+    for i in range(x.shape[0]) :
+        temp = np.copy(x[i])
+        
         x[i] = temp + h
-        a = f(x[1])
+        a = f(x[i])
 
         x[i] = temp - h
-        b = f(x[1])
+        b = f(x[i])
 
         x[i] = temp
         grad[i] = (a - b) / (2 * h)
+
 
     return grad;                        # Get the gradient at x
 
